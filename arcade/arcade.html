@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dunk Neo</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  
+  <div class="sidenav">
+  <p><div style="text-align:center"><h2>PACO on DUNK.NEO</h2></div>
+  <a href=/index.html>Home</a> <br>
+  <a href=/blog.html>Blog</a> <br>
+  <a href=/projects.html>Projects</a> <br>
+  <a href=/articles.html>Articles</a> <br>
+  <a href=/photos/photos.html>Photos</a> <br>
+  <a href=/about.html>About Me</a> <br>
+  <a href=/contact.html>Contact</a> <br>
+  <img src="/img/vhs.jpeg" width="100" hspace=30>
+</div>
+  
+    <h1>Custom Arcade Cabinet</h1>
+    <hr />
+    
+    <p>In February of 2018 a friend approached me and asked how difficult it would be to built an arcade cabinet for him to play emulators on. I told him it was just a matter of building/acquiring a shell, mounting a screen, putting together a decent computer, and wiring the buttons through a controller. Easy, right? It ended up take us nearly a year to complete while working almost every sunday, and in December of 2018 we finished not one, but two emulation cabinets. On this page I will do my best to document the build process. We didn't take photos of every step, so I'll be explaining things as best I can with limited visual aid.</p><br>
+    
+    <p>I'm still going through what photos my friend and I have and also trying to recall our method as best I can. Until I have my thoughts together, this page will host relevant photos.</p><br>
+    
+    <p> UPDATE 02/2020 - Added a gallery for viewing photos. New photos and details will be added soon. </p>
+    
+<!--    <img src="/arcade/arcade_7.jpg" width="300">
+    <img src="/arcade/arcade_6.jpg" width="300">
+    <img src="/arcade/arcade_5.jpg" width="300">
+    <img src="/arcade/arcade_4.jpg" width="300">
+    <img src="/arcade/arcade_3.jpg" width="300">
+    <img src="/arcade/arcade_2.jpg" width="300">
+    <img src="/arcade/arcade_1.jpg" width="620"> -->
+    
+     <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+      <img src="/arcade/arcade_7.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+      <img src="/arcade/arcade_6.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+      <img src="/arcade/arcade_5.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+      <img src="/arcade/arcade_4.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+      <img src="/arcade/arcade_3.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+      <img src="/arcade/arcade_2.jpg" style="width:50%">
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+      <img src="/arcade/arcade_1.jpg" style="width:50%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_7.jpg" style="width:600%" onclick="currentSlide(1)" alt="The 90% finished cabinet">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_6.jpg" style="width:600%" onclick="currentSlide(2)" alt="My friend's cabinet in a near finished state">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_5.jpg" style="width:600%" onclick="currentSlide(3)" alt="The underside of my control panel. The top button row had yet to be wired.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_4.jpg" style="width:600%" onclick="currentSlide(4)" alt="Testing the control panel with some Galaga. The Dell optiplex that runs the cabinet is visible in this photo.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_3.jpg" style="width:600%" onclick="currentSlide(5)" alt="Cabinet shell.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_2.jpg" style="width:600%" onclick="currentSlide(6)" alt="Less finished cabinet shell">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/arcade/arcade_1.jpg" style="width:600%" onclick="currentSlide(7)" alt="Photo of when we assembled all the sides for the first time.">
+    </div>
+  </div>
+</div> 
+    
+    
+    <br>
+    <p>For the cabinet itself we used a <a href=https://www.instructables.com/id/Easy-Cab-arcade/>template I found on instructables</a> as it was the ideal size we were aiming for and had this easy to follow cutting guide for using two sheets of 4x8 plywood. We ended up using medium density overlay (MDO) instead of plywood as it has the smooth finish and strength of fiberboard, with the reduced weight offered by the center layer of plywood.</p><br>
+    
+    <img src="/arcade/template.jpg" width="600">
+    
+    <p>For the PCs inside we used two Dell Optiplex 790s that we found on eBay for about $100. We upped the RAM to 8GB with some spare sticks I had, threw in a GTX 710 for another $60, and connected a 4TB external drive for storing games and frontend settings. Speaking of the frontend, we settled on Launchbox Big Box due to it's ease of use, wide range of features, and extensive community and developer support. We also bought a pair of TP Link USB wireless adapters for mounting on the top of the cabinet.</p>
+    
+    <br>
+    <p style="text-align:center;"><h3><b>*UNDER CONSTRUCTION*</b></h3></p>
+    
+    <br><br>
+    <div class="footer">
+  <p>© 2019 PACO</p>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+  </body>
+</html>
